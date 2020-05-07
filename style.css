@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Ruluko');
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Ruluko', sans-serif;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%; 
+  max-height: 100%;
+}
+
+.audio{
+  color: white; 
+  font-size: 7vw;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  width: 80%;
+  opacity: 0.5;
+  
+}
+
+.container{
+  position: fixed;
+  z-index: 1;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#watch {
+  color: rgb(252, 150, 65);
+  text-align: center;
+  position: fixed;
+  height: 1.4em;
+  width: 3.8em;
+  overflow: show;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  bottom: 60%;
+  right: 0;
+  font-size: 15vw;
+  -webkit-text-stroke: 3px rgb(210, 65, 36);
+  text-shadow: 4px 4px 10px rgba(210, 65, 36, 0.4),
+               4px 4px 20px rgba(210, 45, 26, 0.4),
+               4px 4px 30px rgba(210, 25, 16, 0.4),
+               4px 4px 40px rgba(210, 15, 06, 0.4);
+}
+
+.text{
+  color: white; 
+  font-size: 7vw;
+  position: relative;
+  top: 55%;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+}
+
+.animation-typewriter{
+  animation: typewriter 2.5s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
